@@ -1,6 +1,6 @@
 /* This assumes geometric header shrinkage */
 /* Also, it tries to make h2 be 1em */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h2, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     /* Note kindle hates margin:0 ! (or margin-left or margin-top set) it inserts newlines galore */
     /* margin: 0 */
     margin-right: 0;
@@ -54,7 +54,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0px; }
   
   /* font plan- serif text, sans headers */
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h2, h4, h5, h6 {
     hyphens: none !important;
     -moz-hyphens: none !important;
     -webkit-hyphens: none !important;
@@ -78,7 +78,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin-top: 0.5em;
     margin-bottom: 0.5em; }
   
-  h3 {
+  h2 {
     font-size: 0.625em; }
   
   h4 {
@@ -91,7 +91,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 0.153em; }
   
   /* Do not indent first paragraph. Mobi will need class='first-para' */
-  h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  h1 + p, h2 + p, h2 + p, h4 + p, h5 + p, h6 + p {
     text-indent: 0; }
   
   p {
@@ -643,7 +643,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     h2 {
       font-size: 1em; }
   
-    h3 {
+    h2 {
       font-size: 2em; }
   
     h4 {
