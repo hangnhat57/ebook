@@ -1,0 +1,21 @@
+body {
+    font-family: "DejaVu Sans", "Arial", sans-serif;
+}
+pre {
+    background-color: #1e1e1e; /* VS Code dark background */
+    color: #d4d4d4;           /* Default text color */
+    font-family: "Fira Code", "Courier New", monospace;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    color: #c586c0; /* Syntax color */
+}
+
+/* Add specific colors for code syntax */
+.hljs-keyword { color: #569cd6; }
+.hljs-string { color: #ce9178; }
+.hljs-comment { color: #6a9955; font-style: italic; }
+.hljs-function { color: #dcdcaa; }
