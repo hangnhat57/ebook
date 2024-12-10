@@ -2,12 +2,12 @@ body {
     font-family: "DejaVu Sans", "Arial", sans-serif;
     counter-reset: page;
 }
-
-
-h1:before {
-    counter-increment: page;
-    content: "Trang " counter(page) ": ";
+h2 {
+    page-break-before: always;
+    margin-top: 0;
 }
+
+
 pre {
     background-color: #1e1e1e; /* VS Code dark background */
     color: #d4d4d4;           /* Default text color */
