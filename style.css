@@ -20,6 +20,7 @@ pre {
     overflow-x: auto;
     white-space: pre-wrap;    /* Allow code to wrap */
     word-wrap: break-word;    /* Break long words */
+    page-break-inside: avoid; /* Avoid breaking code blocks across pages */
 }
 
 code {
