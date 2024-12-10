@@ -1,4 +1,26 @@
-## Phần 1: Giới thiệu về Deep Learning - Lược sử và khái niệm
+# Lời Tựa
+
+**Chào bạn đọc thân mến,**
+
+Hành trình khám phá Deep Learning chưa bao giờ dễ dàng đến thế! 
+
+Được chắp bút bởi Gemini AI Pro, cuốn sách này là người bạn đồng hành lý tưởng cho việc tự học và nghiên cứu Deep Learning. 
+
+Với nội dung cô đọng, súc tích, cuốn sách sẽ giúp bạn:
+
+* Nắm vững kiến thức nền tảng.
+* Hiểu rõ các kỹ thuật huấn luyện mô hình.
+* Làm quen với PyTorch.
+* Vận dụng Deep Learning vào thực tế.
+
+Hãy cùng khám phá thế giới Deep Learning đầy thú vị!
+
+
+**Nate**  
+**Dec 10 2024**  
+
+
+#  Phần 1: Giới thiệu về Deep Learning - Lược sử và khái niệm
 
 Deep Learning (học sâu), một nhánh của Machine Learning (học máy), đã và đang tạo nên những bước đột phá ngoạn mục trong lĩnh vực trí tuệ nhân tạo. Deep Learning mô phỏng cách thức hoạt động của não bộ con người, cho phép máy tính "học" từ dữ liệu và tự động trích xuất các đặc trưng phức tạp.
 
@@ -46,9 +68,10 @@ Deep Learning mang lại nhiều ưu điểm vượt trội so với các phươ
 * **Khả năng học biểu diễn dữ liệu:** Cải thiện hiệu suất bằng cách tìm ra cách biểu diễn dữ liệu phù hợp với từng bài toán.
 * **Ứng dụng rộng rãi:** Deep Learning có thể được áp dụng trong hầu hết các lĩnh vực, giúp giải quyết những bài toán phức tạp mà trước đây con người chưa thể giải quyết được.
 
-## Phần 2: Khái niệm cơ bản trong Deep Learning - Nền móng của mạng nơ-ron
+#  Phần 2: Khái niệm cơ bản trong Deep Learning - Nền móng của mạng nơ-ron
 
 Để xây dựng và huấn luyện các mô hình Deep Learning hiệu quả, việc nắm vững các khái niệm cơ bản là vô cùng quan trọng. Phần này sẽ giới thiệu những "viên gạch" nền tảng cấu thành mạng nơ-ron, từ nơ-ron, lớp, hàm kích hoạt, cho đến các quá trình lan truyền tiến và lan truyền ngược.
+
 ![Neuron Network](./images/2-1-noron.jpg)
 
 
@@ -122,9 +145,10 @@ Hàm mất mát (loss function) đo lường mức độ sai khác giữa kết 
 **Lan truyền ngược (backward propagation):** Quá trình tính toán gradient của hàm mất mát theo các trọng số, từ đó cập nhật trọng số để giảm thiểu sai số.
 
 Hai quá trình này lặp đi lặp lại trong quá trình huấn luyện mô hình, giúp mô hình "học" từ dữ liệu và cải thiện khả năng dự đoán.
+
 ![propagation](./images/back.png)
 
-## Phần 3: PyTorch - Công cụ linh hoạt cho Deep Learning
+#  Phần 3: PyTorch - Công cụ linh hoạt cho Deep Learning
 
 ### 3.1 PyTorch: Khái niệm và vai trò
 
@@ -186,7 +210,7 @@ pip install torch torchvision torchaudio
 
 * **`nn.Module`:** `nn.Module` là lớp cơ sở để xây dựng các khối (block) trong mạng nơ-ron. PyTorch cung cấp sẵn nhiều lớp `nn.Module` như `nn.Linear`, `nn.Conv2d`, `nn.RNN`... Người dùng có thể kế thừa lớp `nn.Module` để tạo các lớp tùy chỉnh cho mô hình của mình.
 
-## Phần 4: Tensor - Khối xây dựng nền tảng trong PyTorch
+#  Phần 4: Tensor - Khối xây dựng nền tảng trong PyTorch
 
 ### 4.1 Tensor: Biểu diễn dữ liệu đa chiều
 
@@ -313,7 +337,7 @@ a = torch.rand(3, 4, device=device)
 
 Tensor là nền tảng cho việc xây dựng và huấn luyện các mô hình Deep Learning trong PyTorch. Việc nắm vững các thao tác trên Tensor là bước khởi đầu quan trọng để thành thạo PyTorch và Deep Learning.
 
-## Phần 5: Xây dựng mạng nơ-ron đầu tiên - Perceptron và những khái niệm nền tảng
+#  Phần 5: Xây dựng mạng nơ-ron đầu tiên - Perceptron và những khái niệm nền tảng
 
 ### 5.1 Perceptron: Mô hình nơ-ron đơn giản
 
@@ -327,6 +351,7 @@ Về cơ bản, Perceptron là một mô hình tuyến tính, nhận đầu vào
 Hàm kích hoạt thường là một hàm phi tuyến tính, ví dụ như hàm bước (step function) hoặc hàm sigmoid. Hàm kích hoạt giúp Perceptron có khả năng học các mẫu phi tuyến tính trong dữ liệu.
 
 ![perceptron](./images/per.png)
+
 ### Mô hình Toán học của Perceptron
 
 Perceptron, một dạng mạng nơ-ron cơ bản, có thể được biểu diễn bằng một hàm toán học.  
@@ -424,7 +449,7 @@ for epoch in range(100):
 
 Perceptron là một mô hình đơn giản nhưng quan trọng trong Deep Learning. Nó là nền tảng để xây dựng các mạng nơ-ron phức tạp hơn, giúp giải quyết các bài toán đa dạng trong nhiều lĩnh vực.
 
-## Phần 6: Kiến trúc mạng nơ-ron nâng cao - Mở rộng khả năng của Deep Learning
+#  Phần 6: Kiến trúc mạng nơ-ron nâng cao - Mở rộng khả năng của Deep Learning
 
 Sau khi đã nắm vững những khái niệm cơ bản và làm quen với Perceptron, chúng ta sẽ tiếp tục hành trình khám phá Deep Learning với những kiến trúc mạng nơ-ron phức tạp và mạnh mẽ hơn. Các kiến trúc này được thiết kế để giải quyết những bài toán phức tạp, đòi hỏi khả năng xử lý thông tin ở mức độ cao hơn.
 
@@ -441,6 +466,7 @@ CNNs thường bao gồm các lớp sau:
 * **Lớp Fully Connected (Fully Connected Layer):** Kết nối tất cả các nơ-ron từ lớp trước đó, thường được sử dụng ở cuối mạng để đưa ra dự đoán.
 
 ![cnn](./images/cnn.png)
+
 **Ví dụ minh họa:**
 
 ```python
@@ -473,7 +499,9 @@ Recurrent Neural Networks (RNNs) là một loại mạng nơ-ron được thiế
 **Cấu trúc của RNNs:**
 
 RNNs có cấu trúc đặc biệt với các kết nối "vòng lặp", cho phép thông tin từ các bước thời gian trước đó ảnh hưởng đến kết quả ở bước thời gian hiện tại.
+
 ![rnn](./images/rnn.png)
+
 **Ví dụ minh họa:**
 
 ```python
@@ -508,7 +536,7 @@ Ngoài CNNs và RNNs, còn có nhiều kiến trúc mạng nơ-ron khác đượ
 
 Mỗi kiến trúc mạng nơ-ron có những ưu điểm và nhược điểm riêng, phù hợp với những bài toán cụ thể. Việc lựa chọn kiến trúc mạng phù hợp là một bước quan trọng trong việc xây dựng mô hình Deep Learning hiệu quả.
 
-## Phần 7: Các phương pháp tối ưu hóa trong Deep Learning
+#  Phần 7: Các phương pháp tối ưu hóa trong Deep Learning
 
 Trong lĩnh vực Deep Learning, việc huấn luyện một mô hình hiệu quả đòi hỏi việc tìm kiếm bộ trọng số tối ưu để giảm thiểu hàm mất mát. Quá trình này có thể được ví như việc điều chỉnh các tham số của một hệ thống phức tạp để đạt được hiệu suất mong muốn. Các phương pháp tối ưu hóa đóng vai trò then chốt trong việc điều chỉnh các trọng số này, hướng dẫn mô hình "học" từ dữ liệu và cải thiện khả năng dự đoán.
 
@@ -524,7 +552,9 @@ Quá trình này có thể được hình dung như sau:
 4. **Lặp lại:** Lặp lại bước 2 và 3 cho đến khi đạt được điều kiện dừng (ví dụ: số lần lặp tối đa, hàm mất mát đạt giá trị đủ nhỏ).
 
 Tốc độ học (learning rate) là một siêu tham số quan trọng, quyết định "bước nhảy" của mỗi lần cập nhật trọng số. Lựa chọn tốc độ học phù hợp là rất quan trọng để đảm bảo thuật toán hội tụ hiệu quả.
+
 ![gradient decent](./images/gd.png)
+
 **Minh họa bằng Python:**
 
 ```python
@@ -583,7 +613,7 @@ Việc lựa chọn phương pháp tối ưu hóa phù hợp phụ thuộc vào 
 
 Trong thực tế, Adam thường là lựa chọn phổ biến do hiệu suất tốt trên nhiều bài toán. Tuy nhiên, việc thử nghiệm với các phương pháp khác nhau và điều chỉnh siêu tham số là cần thiết để đạt được kết quả tối ưu.
 
-## Phần 8: Các kỹ thuật chính quy hóa (Regularization) - "Kiểm soát" sức mạnh của mô hình
+#  Phần 8: Các kỹ thuật chính quy hóa (Regularization) - "Kiểm soát" sức mạnh của mô hình
 
 Trong huấn luyện mô hình Deep Learning, mục tiêu của chúng ta là tạo ra một mô hình có khả năng khái quát hóa tốt, tức là hoạt động hiệu quả trên dữ liệu mới, chưa từng gặp trong quá trình huấn luyện. Tuy nhiên, đôi khi mô hình lại "học quá kỹ" trên tập dữ liệu huấn luyện, đến mức "ghi nhớ" cả những nhiễu và chi tiết không quan trọng. Hiện tượng này được gọi là **overfitting**, khiến cho mô hình hoạt động kém hiệu quả trên dữ liệu mới.
 
@@ -638,7 +668,7 @@ Chính quy hóa được sử dụng rộng rãi trong Deep Learning để cải
 
 Việc lựa chọn kỹ thuật chính quy hóa phù hợp phụ thuộc vào đặc điểm của bài toán và tập dữ liệu. Thử nghiệm với các kỹ thuật khác nhau và điều chỉnh siêu tham số là cần thiết để đạt được hiệu quả tốt nhất.
 
-## Phần 9: Các vấn đề thường gặp và cách giải quyết - "Bác sĩ" cho mạng nơ-ron
+#  Phần 9: Các vấn đề thường gặp và cách giải quyết - "Bác sĩ" cho mạng nơ-ron
 
 Trong quá trình huấn luyện mô hình Deep Learning, chúng ta thường gặp phải những "trục trặc" khiến cho mô hình hoạt động không như mong muốn. Những vấn đề này có thể được ví như những "căn bệnh" mà mạng nơ-ron mắc phải. Và để "chữa trị" cho những "căn bệnh" này, chúng ta cần đến những "bác sĩ" tài ba - đó chính là những kỹ thuật và phương pháp được thiết kế để giải quyết các vấn đề thường gặp trong Deep Learning.
 
@@ -714,7 +744,7 @@ Underfitting xảy ra khi mô hình quá đơn giản để học được nhữ
 * **Sử dụng các kỹ thuật tối ưu hóa hiệu quả hơn:** Adam, RMSprop...
 
 
-## Phần 10: Xây dựng dự án Deep Learning - "Vũ khí" chinh phục thế giới thực
+#  Phần 10: Xây dựng dự án Deep Learning - "Vũ khí" chinh phục thế giới thực
 
 Sau khi đã trang bị đầy đủ "kiến thức võ công" về Deep Learning và PyTorch, giờ là lúc chúng ta bước vào "giang hồ" và sử dụng "vũ khí" này để chinh phục những thử thách thực tế. Phần này sẽ hướng dẫn bạn xây dựng một số dự án Deep Learning phổ biến, sử dụng PyTorch để giải quyết các bài toán trong các lĩnh vực khác nhau.
 
@@ -741,7 +771,7 @@ Phân loại ảnh là một trong những ứng dụng phổ biến nhất củ
     * Đánh giá mô hình trên tập kiểm tra: Tính toán độ chính xác, precision, recall, F1-score...
     * Phân tích kết quả: Tìm hiểu những điểm mạnh và điểm yếu của mô hình, đưa ra những cải tiến.
 
-**Demo code:**
+**Chuẩn bị dữ liệu:**
 
 ```python
 import torch
@@ -763,7 +793,10 @@ testset = datasets.CIFAR10(root='./data', train=False,
                                        download=True, transform=transform)
 testloader = torch.utils.data.DataLoader(testset, batch_size=4,
                                          shuffle=False, num_workers=2)
+```
+**Xây dựng mô hình CNNs:**
 
+```python
 # 2. Xây dựng mô hình CNNs (ví dụ sử dụng kiến trúc đơn giản)
 class Net(nn.Module):
     def __init__(self):
@@ -785,7 +818,11 @@ class Net(nn.Module):
         return x
 
 net = Net()
+```
 
+**Huấn luyện mô hình:**
+
+```python
 # 3. Huấn luyện mô hình
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
@@ -814,7 +851,11 @@ for epoch in range(2):  # loop over the dataset multiple times
             running_loss = 0.0
 
 print('Finished Training')
+```
 
+**Đánh giá mô hình:**
+
+```python
 # 4. Đánh giá mô hình (code demo được rút gọn)
 correct = 0
 total = 0
