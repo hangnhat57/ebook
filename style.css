@@ -2,12 +2,15 @@ body {
     font-family: "DejaVu Sans", "Arial", sans-serif;
     counter-reset: page;
 }
+
 h2 {
     page-break-before: always;
     margin-top: 0;
 }
-
-
+h1 {
+    page-break-before: always;
+    margin-top: 0;
+}
 pre {
     background-color: #1e1e1e; /* VS Code dark background */
     color: #d4d4d4;           /* Default text color */
@@ -15,6 +18,8 @@ pre {
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
+    white-space: pre-wrap;    /* Allow code to wrap */
+    word-wrap: break-word;    /* Break long words */
 }
 
 code {
